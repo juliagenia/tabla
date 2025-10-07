@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de usuario</title>
+     <link rel="stylesheet" href="crear.css">
+</head>
+
+<body>
+    <form id="registroForm">
+        <div class="form-group">
+            <label for="inputID">ID:</label>
+            <input type="text" id="inputID" name="id" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputNombre">Nombre:</label>
+            <input type="text" id="inputNombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEdad">Edad:</label>
+            <input type="number" id="inputEdad" name="edad" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail">Email:</label>
+            <input type="email" id="inputEmail" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputTelefono">Teléfono:</label>
+            <input type="tel" id="inputTelefono" name="telefono" required>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="inputActivo" name="activo">
+            <label for="inputActivo">Activo</label>
+        </div>
+
+        <button type="submit" id="Enviar">Enviar</button>
+    </form>
+    <div id="tablaUsuarios"></div>
+
+
+
+    <script type="module" src="crear.js"></script>
+
+</body>
+
+</html>

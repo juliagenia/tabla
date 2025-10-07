@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f1ee;
+  color: #333;
+  padding: 2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #8c6f4d;
+  outline: none;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button#btnEnviar {
+  background-color: #8c6f4d;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#btnEnviar:hover {
+  background-color: #6e5438;
+}
+#tablaUsuarios table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#tablaUsuarios th,
+#tablaUsuarios td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tablaUsuarios th {
+  background-color: #11acff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#tablaUsuarios tr:hover {
+  background-color: #f1f1f1;
+}
+
+#tablaUsuarios td {
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #tablaUsuarios table {
+    font-size: 0.9rem;
+  }
+
+  #tablaUsuarios th,
+  #tablaUsuarios td {
+    padding: 10px;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
